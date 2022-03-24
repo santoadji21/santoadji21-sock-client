@@ -1,73 +1,72 @@
-.room{
-    box-shadow: 1px 1px 10px rgba(0,0,0,.1);
-    border-radius: 5px;
-    .heading{
-        font-family: 'DM Sans';
-        color: rgb(201, 172, 172);
-        font-size: 2rem;
-        font-weight: 500;
-        z-index: 1000;
-    }
+.room {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  .heading {
+    font-family: 'DM Sans';
+    color: rgb(201, 172, 172);
+    font-size: 2rem;
+    font-weight: 500;
+    z-index: 1000;
+  }
 
-    .messages{
-        background:#fffbfb;
-        .message{
-            .msg{
-                color: rgba(0,0,0,.7);
-            }
-        }
-        .my-message{
-            align-self: flex-end;
-            .user{
-                display: none;
-            }
-            .msg{
-                color: white;
-                background: #408EEA;
-            }
-        }
-
+  .messages {
+    background: #fffbfb;
+    .message {
+      .msg {
+        color: white;
+        background: #22a6b3;
+      }
     }
-
-    .messages > div{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        width: auto !important;
-        overflow:auto;
-        min-height:400px;
-        max-height:400px;
-        padding: 1rem;
+    .my-message {
+      align-self: flex-end;
+      .user {
+        display: none;
+      }
+      .msg {
+        color: white;
+        background: #408eea;
+      }
     }
-    
-    .form{
-        position: relative;
-        z-index: 1000;
-        input{
-            width: 100%;
-            padding: 1.5rem ;
-            border-radius: 0px 0px 10px 10px;
-            &:focus{
-                outline: none;
-            }
+  }
 
-        }
-        button{
-            position: absolute;
-            right: 1rem;
-            top: 1rem;
-        }
+  .messages > div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: auto !important;
+    overflow: auto;
+    min-height: 400px;
+    max-height: 400px;
+    padding: 1rem;
+  }
+
+  .form {
+    position: relative;
+    z-index: 1000;
+    input {
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 0px 0px 10px 10px;
+      &:focus {
+        outline: none;
+      }
     }
+    button {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+  }
 }
 
 ::placeholder {
-    opacity: .5; 
+  opacity: 0.5;
 }
 
-@media(max-width : 30em){
-    .room{
-        .messages{
-            flex: 1;
-        }
+@media (max-width: 30em) {
+  .room {
+    .messages {
+      flex: 1;
     }
+  }
 }
